@@ -1,7 +1,8 @@
 {
-	"name": "Sample Theme",
+	"name": "Sevastolink",
 	"version": "1.0.0",
-	"minAppVersion": "1.10.6",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md"
+	"minAppVersion": "1.0.0",
+	"author": "Eric",
+	"authorUrl": "https://github.com/U1F30C",
+	"description": "A lo-fi sci-fi theme inspired by the Sevastolink computers from Alien: Isolation. Monochromatic green-on-black with CRT aesthetics, grid layouts, and utilitarian design."
 }

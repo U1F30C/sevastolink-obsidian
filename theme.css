@@ -1,34 +1,667 @@
+/* ========================================
+   SEVASTOLINK THEME - LO-FI SCI-FI AESTHETIC
+   Inspired by Alien: Isolation
+   ======================================== */
+
+/* ========================================
+   COLOR PALETTE
+   ======================================== */
+
+/* ========================================
+   GLOBAL COLORS - APPLIED TO ROOT
+   ======================================== */
+
+:root {
+  /* Authentic Alien: Isolation colors */
+  --color-bg-primary: #143019;
+  --color-bg-header: #1B6A41;
+  --color-text-primary: #CCD9C5;
+  --color-accent-green: #13CB6D;
+  
+  /* Accent colors */
+  --color-amber: #FFA500;
+  --color-red-alert: #FF0000;
+  --color-white: #FFFFFF;
+  
+  /* Primary colors */
+  --background-primary: #143019;
+  --background-secondary: #1B3A2E;
+  --background-tertiary: #1B6A41;
+  --background-modifier-border: #13CB6D;
+  --background-modifier-form-field: #1B3A2E;
+  --background-modifier-form-field-highlighted: #1B6A41;
+  --background-modifier-box-shadow: rgba(19, 203, 109, 0.1);
+  --background-modifier-success: #13CB6D;
+  --background-modifier-error: #FF0000;
+  --background-modifier-error-rgb: 255, 0, 0;
+  --background-modifier-warning: #FFA500;
+  --background-modifier-warning-rgb: 255, 165, 0;
+  
+  /* Text colors */
+  --text-normal: #CCD9C5;
+  --text-muted: #7A8A87;
+  --text-faint: #5A6A67;
+  --text-on-accent: #143019;
+  --text-error: #FF0000;
+  --text-success: #13CB6D;
+  --text-warning: #FFA500;
+  --text-highlight-bg: rgba(19, 203, 109, 0.2);
+  --text-selection: rgba(19, 203, 109, 0.3);
+  
+  /* Interactive elements */
+  --interactive-normal: #7A8A87;
+  --interactive-hover: #CCD9C5;
+  --interactive-accent: #13CB6D;
+  --interactive-accent-rgb: 19, 203, 109;
+  --interactive-accent-hover: #1AFF7F;
+  
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: #13CB6D;
+  --scrollbar-bg: #1B3A2E;
+  --scrollbar-thumb-bg: #7A8A87;
+  
+  /* Dividers and borders */
+  --divider-color: #13CB6D;
+  --border-color: #CCD9C5;
+  
+  /* Code backgrounds - CRITICAL for syntax highlighting TODO: reeivew if this groupd is neded, execept background-primary-alt */
+  --code-background: #143019;
+  --code-normal: #CCD9C5;
+  --code-comment: #7A8A87;
+  --code-function: #13CB6D;
+  --code-keyword: #FFA500;
+  --code-string: #13CB6D;
+  --code-number: #FFA500;
+  --code-tag: #13CB6D;
+  --code-attribute: #7A8A87;
+
+  --embed-background: #143019;
+  --metadata-background: #143019;
+  --background-primary-alt: #143019;
+}
+
+/* ========================================
+   DARK THEME (PRIMARY)
+   ======================================== */
+
+.theme-dark {
+  /* Primary colors */
+  --background-primary: #143019;
+  --background-secondary: #1B3A2E;
+  --background-tertiary: #1B6A41;
+  --background-modifier-border: #13CB6D;
+  --background-modifier-form-field: #1B3A2E;
+  --background-modifier-form-field-highlighted: #1B6A41;
+  --background-modifier-box-shadow: rgba(19, 203, 109, 0.1);
+  --background-modifier-success: #13CB6D;
+  --background-modifier-error: #FF0000;
+  --background-modifier-error-rgb: 255, 0, 0;
+  --background-modifier-warning: #FFA500;
+  --background-modifier-warning-rgb: 255, 165, 0;
+  
+  /* Text colors */
+  --text-normal: #CCD9C5;
+  --text-muted: #7A8A87;
+  --text-faint: #5A6A67;
+  --text-on-accent: #143019;
+  --text-error: #FF0000;
+  --text-success: #13CB6D;
+  --text-warning: #FFA500;
+  --text-highlight-bg: rgba(19, 203, 109, 0.2);
+  --text-selection: rgba(19, 203, 109, 0.3);
+  
+  /* Interactive elements */
+  --interactive-normal: #7A8A87;
+  --interactive-hover: #CCD9C5;
+  --interactive-accent: #13CB6D;
+  --interactive-accent-rgb: 19, 203, 109;
+  --interactive-accent-hover: #1AFF7F;
+  
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: #13CB6D;
+  --scrollbar-bg: #1B3A2E;
+  --scrollbar-thumb-bg: #7A8A87;
+  
+  /* Dividers and borders */
+  --divider-color: #13CB6D;
+  --border-color: #CCD9C5;
+  /* Code backgrounds - CRITICAL for syntax highlighting */
+  --code-background: #143019;
+  --code-normal: #CCD9C5;
+  --code-comment: #7A8A87;
+  --code-function: #13CB6D;
+  --code-keyword: #FFA500;
+  --code-string: #13CB6D;
+  --code-number: #FFA500;
+  --code-tag: #13CB6D;
+  --code-attribute: #7A8A87;
+
+  --embed-background: #143019;
+  --metadata-background: #143019;
+  --background-primary-alt: #143019;
+}
+
+/* ========================================
+   LIGHT THEME (SAME AS DARK - GREEN-ON-BLACK IS THE ESSENCE)
+   ======================================== */
+
+.theme-light {
+  /* Primary colors - same as dark theme */
+  --background-primary: #143019;
+  --background-secondary: #1B3A2E;
+  --background-tertiary: #1B6A41;
+  --background-modifier-border: #13CB6D;
+  --background-modifier-form-field: #1B3A2E;
+  --background-modifier-form-field-highlighted: #1B6A41;
+  --background-modifier-box-shadow: rgba(19, 203, 109, 0.1);
+  --background-modifier-success: #13CB6D;
+  --background-modifier-error: #FF0000;
+  --background-modifier-error-rgb: 255, 0, 0;
+  --background-modifier-warning: #FFA500;
+  --background-modifier-warning-rgb: 255, 165, 0;
+  
+  /* Text colors */
+  --text-normal: #CCD9C5;
+  --text-muted: #7A8A87;
+  --text-faint: #5A6A67;
+  --text-on-accent: #143019;
+  --text-error: #FF0000;
+  --text-success: #13CB6D;
+  --text-warning: #FFA500;
+  --text-highlight-bg: rgba(19, 203, 109, 0.2);
+  --text-selection: rgba(19, 203, 109, 0.3);
+  
+  /* Interactive elements */
+  --interactive-normal: #7A8A87;
+  --interactive-hover: #CCD9C5;
+  --interactive-accent: #13CB6D;
+  --interactive-accent-rgb: 19, 203, 109;
+  --interactive-accent-hover: #1AFF7F;
+  
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: #13CB6D;
+  --scrollbar-bg: #1B3A2E;
+  --scrollbar-thumb-bg: #7A8A87;
+  
+  /* Dividers and borders */
+  --divider-color: #13CB6D;
+  --border-color: #CCD9C5;
+  
+  /* Code backgrounds - CRITICAL for syntax highlighting */
+  --code-background: #143019;
+  --code-normal: #CCD9C5;
+  --code-comment: #7A8A87;
+  --code-function: #13CB6D;
+  --code-keyword: #FFA500;
+  --code-string: #13CB6D;
+  --code-number: #FFA500;
+  --code-tag: #13CB6D;
+  --code-attribute: #7A8A87;
+
+  --embed-background: #143019;
+  --metadata-background: #143019;
+  --background-primary-alt: #143019;
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+  /* Remove all border radius for sharp, utilitarian look */
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --input-radius: 0px;
+  --tab-radius-active: 0px;
+  --checkbox-radius: 0px;
+  --toggle-radius: 0px;
+  --toggle-thumb-radius: 0px;
+  --slider-thumb-radius: 0px;
+  
+  /* Monospace font for that terminal feel - OCR-A for authentic sci-fi look */
+  --font-text-theme: 'Glass TTY VT220', monospace;
+  --font-monospace-theme: 'Glass TTY VT220', monospace;
+  --font-interface-theme: 'Glass TTY VT220', monospace;
+  
+  /* Increase letter spacing for that blocky feel */
+  letter-spacing: 0.05em;
+  
+  /* Force background and text colors */
+  background-color: #143019 !important;
+  color: #CCD9C5 !important;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+.markdown-preview-view,
+.markdown-source-view,
+.cm-editor {
+  font-family: 'Courier New', 'Courier', monospace;
+  letter-spacing: 0.05em;
 }
 
+/* Make headings more utilitarian */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid var(--text-normal);
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* ========================================
+   BORDERS & GRID LAYOUT
+   ======================================== */
+
+/* Remove rounded corners from SVG elements */
 svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  rx: 0;
+  ry: 0;
 }
+
+/* Add borders to create grid-like panels */
+.workspace-split,
+.workspace-leaf,
+.workspace-tab-container {
+  border: 1px solid var(--background-modifier-border);
+}
+
+.workspace-tab-header {
+  border: 1px solid var(--background-modifier-border);
+  border-bottom: 2px solid var(--background-modifier-border);
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+/* ========================================
+   MENU & CONTEXT
+   ======================================== */
 
 .menu {
-	padding: var(--size-2-1);
+  padding: var(--size-2-1);
+  border: 1px solid var(--background-modifier-border);
 }
 
 .menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
+  padding: var(--size-4-1) var(--size-4-2);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
 }
 
 .menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+/* ========================================
+   INPUT FIELDS & FORMS
+   ======================================== */
+
+:root {
+  --input-focus-border-color: var(--text-normal);
+  --input-focus-outline: 2px solid var(--text-normal);
+  --input-unfocused-border-color: var(--text-muted);
+  --input-disabled-border-color: var(--text-faint);
+  --input-hover-border-color: var(--text-normal);
+}
+
+input,
+textarea,
+select {
+  border: 2px solid var(--text-muted) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-normal) !important;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: var(--text-normal) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--text-normal) !important;
+  outline: 2px solid var(--text-normal) !important;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+button,
+.button {
+  border: 2px solid var(--text-normal);
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  font-family: 'Courier New', 'Courier', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.5em 1em;
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--background-tertiary);
+  border-color: var(--text-normal);
+}
+
+button:active,
+.button:active {
+  background-color: var(--text-normal);
+  color: var(--background-primary);
+}
+
+/* ========================================
+   RIBBON & SIDEBAR
+   ======================================== */
+
+.ribbon {
+  border-right: 2px solid var(--background-modifier-border);
+}
+
+.ribbon-action {
+  border: 1px solid var(--background-modifier-border);
+  margin: 0.25em;
+}
+
+.ribbon-action:hover {
+  background-color: var(--background-tertiary);
+}
+
+/* ========================================
+   EDITOR & MARKDOWN
+   ======================================== */
+
+.markdown-preview-view {
+  padding: 1.5em;
+  line-height: 1.6;
+}
+
+.markdown-preview-view code,
+.cm-inline-code {
+  background-color: var(--background-tertiary);
+  color: var(--text-normal);
+  padding: 0.2em 0.4em;
+  border: 1px solid var(--text-muted);
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.markdown-preview-view pre,
+.cm-s-obsidian .cm-block-comment {
+  background-color: var(--background-tertiary);
+  border: 2px solid var(--text-normal);
+  padding: 1em;
+  overflow-x: auto;
+}
+
+.markdown-preview-view blockquote {
+  border-left: 4px solid var(--text-normal);
+  padding-left: 1em;
+  margin-left: 0;
+  color: var(--text-muted);
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a,
+.internal-link,
+.external-link {
+  color: var(--text-normal);
+  text-decoration: underline;
+  background-color: var(--background-tertiary);
+}
+
+a:hover,
+.internal-link:hover,
+.external-link:hover {
+  color: var(--text-normal);
+  background-color: var(--background-tertiary);
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.25em;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+table th,
+table td {
+  border: 1px solid var(--text-normal);
+  padding: 0.5em;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--background-tertiary);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ========================================
+   SEARCH & HIGHLIGHTS
+   ======================================== */
+
+.search-result-file-title {
+  color: var(--text-normal);
+}
+
+.search-result-file-matches {
+  color: var(--text-muted);
+}
+
+.cm-s-obsidian .cm-search-match {
+  background-color: rgba(0, 255, 65, 0.3);
+  border: 1px solid var(--text-normal);
+}
+
+.cm-s-obsidian .cm-search-match-selected {
+  background-color: rgba(0, 255, 65, 0.5);
+  border: 2px solid var(--text-normal);
+}
+
+/* ========================================
+   TAGS & BADGES
+   ======================================== */
+
+.tag {
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--text-normal);
+  color: var(--text-normal);
+  padding: 0.2em 0.4em;
+  border-radius: 0;
+}
+
+.tag:hover {
+  background-color: var(--text-normal);
+  color: var(--background-primary);
+}
+
+/* ========================================
+   CHECKBOXES & TOGGLES
+   ======================================== */
+
+.checkbox-container {
+  border: 1px solid var(--text-normal);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--text-normal);
+}
+
+/* ========================================
+   CALLOUTS & ADMONITIONS
+   ======================================== */
+
+.callout {
+  border-left: 4px solid var(--text-normal);
+  border: 2px solid var(--text-normal);
+  background-color: var(--background-secondary);
+}
+
+.callout-title {
+  color: var(--text-normal);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ========================================
+   SETTINGS & MODALS
+   ======================================== */
+
+.modal {
+  border: 2px solid var(--text-normal);
+  background-color: var(--background-primary);
+}
+
+.modal-title {
+  color: var(--text-normal);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--text-normal);
+}
+
+.setting-item {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding: 0.75em 0;
+}
+
+.setting-item-name {
+  color: var(--text-normal);
+  font-weight: bold;
+}
+
+.setting-item-description {
+  color: var(--text-muted);
+}
+
+/* ========================================
+   TABS & PANES
+   ======================================== */
+
+.workspace-tab-header {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: var(--background-secondary);
+  font-weight: bold;
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--background-tertiary);
+  border-bottom: 2px solid var(--text-normal);
+}
+
+/* ========================================
+   CRT VISUAL EFFECTS
+   ======================================== */
+
+/* Subtle scan lines effect */
+.markdown-preview-view::before,
+.cm-editor::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.03),
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Glow effect on text */
+.theme-dark .text-normal,
+.theme-dark .markdown-preview-view {
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.is-active {
+  background-color: var(--background-tertiary) !important;
+  border: 1px solid var(--text-normal) !important;
+}
+
+.is-disabled {
+  opacity: 0.5;
+  color: var(--text-faint);
+}
+
+/* ========================================
+   SCROLLBARS
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border: 1px solid var(--text-normal);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+img {
+   filter: sepia(100%) hue-rotate(80deg) brightness(100%) saturate(200%);
+}
+
+div {
+  color: transparent;  
+  text-shadow: 0 0 0 #CCD9C5;
+  font-family: 'Glass TTY VT220';
 }
