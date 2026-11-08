@@ -12,6 +12,9 @@
    ======================================== */
 
 :root {
+  /* Sevastopol Interface first (install separately), then fallbacks */
+  --font-sevastolink: 'Sevastopol Interface', 'Glass TTY VT220', 'Courier New', monospace;
+
   /* Authentic Alien: Isolation colors */
   --color-bg-primary: #143019;
   --color-bg-header: #1B6A41;
@@ -239,7 +242,7 @@ body {
 .markdown-preview-view,
 .markdown-source-view,
 .cm-editor {
-  font-family: 'Courier New', 'Courier', monospace;
+  font-family: var(--font-sevastolink);
   letter-spacing: 0.05em;
 }
 
@@ -328,7 +331,7 @@ select {
   border: 2px solid var(--text-muted) !important;
   background-color: var(--background-secondary) !important;
   color: var(--text-normal) !important;
-  font-family: 'Courier New', 'Courier', monospace;
+  font-family: var(--font-sevastolink);
 }
 
 input:hover,
@@ -353,7 +356,7 @@ button,
   border: 2px solid var(--text-normal);
   background-color: var(--background-secondary);
   color: var(--text-normal);
-  font-family: 'Courier New', 'Courier', monospace;
+  font-family: var(--font-sevastolink);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 0.5em 1em;
@@ -403,7 +406,7 @@ button:active,
   color: var(--text-normal);
   padding: 0.2em 0.4em;
   border: 1px solid var(--text-muted);
-  font-family: 'Courier New', 'Courier', monospace;
+  font-family: var(--font-sevastolink);
 }
 
 .markdown-preview-view pre,
@@ -663,5 +666,22 @@ img {
 div {
   color: transparent;  
   text-shadow: 0 0 0 #CCD9C5;
-  font-family: 'Glass TTY VT220';
+  font-family: var(--font-sevastolink);
+}
+
+/* Window controls (minimize / maximize / close): the global `div` rule above
+   makes color transparent, which hides icons drawn with currentColor. */
+.titlebar-button-container .titlebar-button,
+.titlebar-button-container .titlebar-button svg {
+  color: var(--color-text-primary);
+}
+
+.titlebar-button-container .titlebar-button:hover {
+  color: var(--color-white);
+  background-color: var(--color-bg-header);
+}
+
+.titlebar-button-container .titlebar-button.mod-close:hover {
+  color: var(--color-white);
+  background-color: var(--color-red-alert);
 }

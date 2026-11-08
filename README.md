@@ -10,9 +10,9 @@ A lo-fi sci-fi theme for [Obsidian](https://obsidian.md) inspired by the Sevasto
 
 ## Font
 
-The theme's CSS asks for the `Glass TTY VT220` font and falls back to your system default if it isn't installed. For a closer match, install a VT220-style terminal font such as [Glass TTY VT220](https://sensi.org/~svo/glasstty/).
+The theme uses [Sevastopol Interface](http://fontstruct.com/fontstructions/show/1132894) by RNRCFan, falling back to Glass TTY VT220, then Courier New, then your system monospace font. Install the font on your system for the intended look.
 
-For an *Alien: Isolation* interface look, [Sevastopol Interface](http://fontstruct.com/fontstructions/show/1132894) by RNRCFan is also worth a try. It's released under the FontStruct Non-Commercial License, so it isn't bundled here.
+Sevastopol Interface is released under the FontStruct Non-Commercial License, so it isn't bundled here. Download it from the link above.
 
 ## Credits
 
